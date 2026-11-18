@@ -3,7 +3,7 @@
     "path": "device/samsung/universal7420-common",
     "name": "BasicOS2025/android_device_samsung_universal7420-common",
     "branch": "lineage-24.0",
-    "revision": "bfc05cbafef26cdff372cac323a08df520f077fd"
+    "revision": "d10931e1e3f97c323f1ea6573919da1ef6c46054"
   },
   {
     "path": "device/samsung/zeroflte",
@@ -21,7 +21,7 @@
     "path": "kernel/samsung/universal7420",
     "name": "BasicOS2025/android_kernel_samsung_universal7420",
     "branch": "lineage-24.0",
-    "revision": "421a3cabe8b4285c7e3d5cd617bf811f7168b874"
+    "revision": "c8362559c236826ce4424a0efdc3efb04e35ac86"
   },
   {
     "path": "vendor/samsung",
