@@ -10,6 +10,12 @@ source = Path(sys.argv[1]).resolve()
 projects = json.loads((control / 'sources.json').read_text())
 for project in projects:
     folder = source / project['path']
+    if not (folder / '.git').exists():
+        folder.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(['git', 'clone', '--no-checkout', '--depth=1',
+                        '--branch', project['branch'],
+                        'https://github.com/' + project['name'] + '.git', str(folder)], check=True)
+        subprocess.run(['git', '-C', str(folder), 'checkout', '--detach', project['revision']], check=True)
     current = subprocess.check_output(['git', '-C', str(folder), 'rev-parse', 'HEAD']).decode().strip()
     if current != project['revision']:
         # These are managed device/BSP repositories inside the disposable runner.

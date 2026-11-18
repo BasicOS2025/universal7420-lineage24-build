@@ -3,7 +3,7 @@
     "path": "device/samsung/universal7420-common",
     "name": "BasicOS2025/android_device_samsung_universal7420-common",
     "branch": "lineage-24.0",
-    "revision": "43c3a555b1569f1aa80d7fb981a299f677964095"
+    "revision": "bfc05cbafef26cdff372cac323a08df520f077fd"
   },
   {
     "path": "device/samsung/zeroflte",
@@ -70,5 +70,11 @@
     "name": "samsungexynos7420/android_hardware_samsung_slsi-linaro_openmax",
     "branch": "lineage-21.0",
     "revision": "0faa3d4cad375a31bf43dea0d0bfea274c5972d7"
+  },
+  {
+    "path": "hardware/samsung_slsi-linaro/interfaces",
+    "name": "samsungexynos7420/android_hardware_samsung_slsi-linaro_interfaces",
+    "branch": "lineage-21.0",
+    "revision": "ff394b26f1152bf5be12dcdf059cce49548cbe4f"
   }
 ]

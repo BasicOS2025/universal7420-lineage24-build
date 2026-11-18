@@ -22,7 +22,7 @@
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.18/x86-64" optional="true" />
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" optional="true" />
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" optional="true" />
-  <project path="device/samsung/universal7420-common" name="BasicOS2025/android_device_samsung_universal7420-common" revision="43c3a555b1569f1aa80d7fb981a299f677964095" remote="github" clone-depth="1" />
+  <project path="device/samsung/universal7420-common" name="BasicOS2025/android_device_samsung_universal7420-common" revision="bfc05cbafef26cdff372cac323a08df520f077fd" remote="github" clone-depth="1" />
   <project path="device/samsung/zeroflte" name="BasicOS2025/android_device_samsung_zeroflte" revision="d49eae55304aa50472567a30f1ae1a8feef75405" remote="github" clone-depth="1" />
   <project path="device/samsung/zerolte" name="BasicOS2025/android_device_samsung_zerolte" revision="16c349db624cf99c9318eb4ca07c308655abd769" remote="github" clone-depth="1" />
   <project path="kernel/samsung/universal7420" name="BasicOS2025/android_kernel_samsung_universal7420" revision="421a3cabe8b4285c7e3d5cd617bf811f7168b874" remote="github" clone-depth="1" />
@@ -36,4 +36,5 @@
   <project path="hardware/samsung_slsi-linaro/openmax" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_openmax" revision="0faa3d4cad375a31bf43dea0d0bfea274c5972d7" remote="github" clone-depth="1" />
   <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" remote="aosp" revision="refs/tags/android-14.0.0_r1" clone-depth="1" />
   <project path="prebuilts/clang/kernel/linux-x86" name="platform/prebuilts/clang/host/linux-x86" remote="aosp" revision="refs/heads/android12-release" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/interfaces" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_interfaces" revision="ff394b26f1152bf5be12dcdf059cce49548cbe4f" remote="github" clone-depth="1" />
 </manifest>
