@@ -1,0 +1,53 @@
+name: Experimental Android 17 for Galaxy S6 and S6 edge
+on:
+  workflow_dispatch:
+    inputs:
+      devices:
+        description: Device targets
+        type: choice
+        options: [both, zeroflte, zerolte]
+        default: both
+permissions:
+  contents: read
+concurrency:
+  group: universal7420-lineage24
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare runner
+        run: |
+          df -h
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          sudo apt-get update -qq
+          sudo apt-get install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32readline-dev lib32z1-dev libelf-dev liblz4-tool libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush python3 rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
+          sudo curl -fsSL https://storage.googleapis.com/git-repo-downloads/repo -o /usr/local/bin/repo
+          sudo chmod 755 /usr/local/bin/repo
+          git config --global user.name BasicOS2025
+          git config --global user.email 215494682+BasicOS2025@users.noreply.github.com
+          git config --global gc.auto 0
+          df -h
+      - name: Sync, port and compile both devices
+        env:
+          DEVICES: ${{ inputs.devices }}
+        run: bash ci/build.sh
+      - name: Upload build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: universal7420-diagnostics-${{ github.run_number }}
+          path: |
+            ${{ runner.temp }}/universal7420-logs/
+          retention-days: 14
+      - name: Upload verified ROM packages
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: universal7420-lineage24-${{ github.run_number }}
+          path: ${{ runner.temp }}/universal7420-roms/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14

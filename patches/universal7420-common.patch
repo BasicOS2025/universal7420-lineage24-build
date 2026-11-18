@@ -1,0 +1,37 @@
+diff --git a/Android.bp b/Android.bp
+index 99b0d32..9515b25 100644
+--- a/Android.bp
++++ b/Android.bp
+@@ -1,7 +1,2 @@
+-subdirs = [
+-    "hardware",
+-    "shims",
+-]
+-
+ soong_namespace {
+ }
+diff --git a/device-common.mk b/device-common.mk
+index fc35a4c..8886ba3 100644
+--- a/device-common.mk
++++ b/device-common.mk
+@@ -121,8 +121,8 @@ PRODUCT_PACKAGES += \
+ 
+ # Control groups and task profiles
+ PRODUCT_COPY_FILES += \
+-    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+-    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
++    $(COMMON_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
++    $(COMMON_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+ 
+ # DRM
+ PRODUCT_PACKAGES += \
+diff --git a/hardware/Android.bp b/hardware/Android.bp
+index e9d924a..e69de29 100644
+--- a/hardware/Android.bp
++++ b/hardware/Android.bp
+@@ -1,5 +0,0 @@
+-subdirs = [
+-    "livedisplay",
+-    "atrace",
+-    "nfc",
+-]

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+  <remove-project path="kernel/prebuilts/6.1/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.1/x86_64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.6/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.6/x86_64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.12/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.12/x86_64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.18/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/6.18/x86_64" optional="true" />
+  <remove-project path="kernel/prebuilts/mainline/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/mainline/x86_64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/trusty/6.6/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/trusty/6.12/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.18/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.18/x86-64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" optional="true" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" optional="true" />
+  <project path="device/samsung/universal7420-common" name="samsungexynos7420/android_device_samsung_universal7420-common" revision="e77d91383a634dd299e32143a4db80919505516d" remote="github" clone-depth="1" />
+  <project path="device/samsung/zeroflte" name="samsungexynos7420/android_device_samsung_zeroflte" revision="81c880f39d3c874f44b599c820b79acdd85b71e0" remote="github" clone-depth="1" />
+  <project path="device/samsung/zerolte" name="samsungexynos7420/android_device_samsung_zerolte" revision="6c6efad26e4666bb0ce80fde2d0a11775ec72268" remote="github" clone-depth="1" />
+  <project path="kernel/samsung/universal7420" name="samsungexynos7420/android_kernel_samsung_universal7420" revision="985479cfb9d93a56043aec2ed8d506c22d683e28" remote="github" clone-depth="1" />
+  <project path="vendor/samsung" name="samsungexynos7420/proprietary_vendor_samsung" revision="4a7f3c23e8b4407b5fa1d0b68791d98cbe582c5d" remote="github" clone-depth="1" />
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="626867fff788d69b28e8b2ba2abe80952b1ed805" remote="github" clone-depth="1" />
+  <project path="device/samsung_slsi/sepolicy" name="samsungexynos7420/android_device_samsung_slsi_sepolicy" revision="e73d3c9e8c1a307cbbfb5daff51155dd483a2c41" remote="github" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/exynos" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_exynos" revision="c1088b024151552e7a36631d8cb5d20f42a8c33f" remote="github" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/exynos5" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_exynos5" revision="47b57f7b16ca50387b6507a8d67d59657f72da28" remote="github" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/graphics" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_graphics" revision="4f4788272364009a06132f9b2b62e4a042c2ea0a" remote="github" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/config" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_config" revision="27ea3a67d9adebdb2de15f1a02700a6b5e5d4925" remote="github" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/openmax" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_openmax" revision="0faa3d4cad375a31bf43dea0d0bfea274c5972d7" remote="github" clone-depth="1" />
+  <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" remote="aosp" revision="refs/tags/android-14.0.0_r1" clone-depth="1" />
+  <project path="prebuilts/clang/kernel/linux-x86" name="platform/prebuilts/clang/host/linux-x86" remote="aosp" revision="refs/heads/android12-release" clone-depth="1" />
+</manifest>
