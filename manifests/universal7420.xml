@@ -22,9 +22,9 @@
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.18/x86-64" optional="true" />
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" optional="true" />
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" optional="true" />
-  <project path="device/samsung/universal7420-common" name="BasicOS2025/android_device_samsung_universal7420-common" revision="fa38bada99220be1ddb407506ec6243df42687ec" remote="github" clone-depth="1" />
-  <project path="device/samsung/zeroflte" name="BasicOS2025/android_device_samsung_zeroflte" revision="623e91d99451aeec7306236f472b9be13bbd129a" remote="github" clone-depth="1" />
-  <project path="device/samsung/zerolte" name="BasicOS2025/android_device_samsung_zerolte" revision="73dd9eb0315d62cfc1da1d4c478302b602c842ae" remote="github" clone-depth="1" />
+  <project path="device/samsung/universal7420-common" name="BasicOS2025/android_device_samsung_universal7420-common" revision="e81c388c85843595048d6804d04e8366421d106e" remote="github" clone-depth="1" />
+  <project path="device/samsung/zeroflte" name="BasicOS2025/android_device_samsung_zeroflte" revision="7c2b3a677d7e087a260d263c2c848a9ebaac7f5e" remote="github" clone-depth="1" />
+  <project path="device/samsung/zerolte" name="BasicOS2025/android_device_samsung_zerolte" revision="0bb697b8d5514e0b4501280dc7af67f57506133e" remote="github" clone-depth="1" />
   <project path="kernel/samsung/universal7420" name="BasicOS2025/android_kernel_samsung_universal7420" revision="c8362559c236826ce4424a0efdc3efb04e35ac86" remote="github" clone-depth="1" />
   <project path="vendor/samsung" name="BasicOS2025/proprietary_vendor_samsung" revision="8a74202f65c576d6f94a4184ef1a5907875ae57a" remote="github" clone-depth="1" />
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="626867fff788d69b28e8b2ba2abe80952b1ed805" remote="github" clone-depth="1" />
