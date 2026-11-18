@@ -22,11 +22,11 @@
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/6.18/x86-64" optional="true" />
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" optional="true" />
   <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" optional="true" />
-  <project path="device/samsung/universal7420-common" name="samsungexynos7420/android_device_samsung_universal7420-common" revision="e77d91383a634dd299e32143a4db80919505516d" remote="github" clone-depth="1" />
-  <project path="device/samsung/zeroflte" name="samsungexynos7420/android_device_samsung_zeroflte" revision="81c880f39d3c874f44b599c820b79acdd85b71e0" remote="github" clone-depth="1" />
-  <project path="device/samsung/zerolte" name="samsungexynos7420/android_device_samsung_zerolte" revision="6c6efad26e4666bb0ce80fde2d0a11775ec72268" remote="github" clone-depth="1" />
-  <project path="kernel/samsung/universal7420" name="samsungexynos7420/android_kernel_samsung_universal7420" revision="985479cfb9d93a56043aec2ed8d506c22d683e28" remote="github" clone-depth="1" />
-  <project path="vendor/samsung" name="samsungexynos7420/proprietary_vendor_samsung" revision="4a7f3c23e8b4407b5fa1d0b68791d98cbe582c5d" remote="github" clone-depth="1" />
+  <project path="device/samsung/universal7420-common" name="BasicOS2025/android_device_samsung_universal7420-common" revision="43c3a555b1569f1aa80d7fb981a299f677964095" remote="github" clone-depth="1" />
+  <project path="device/samsung/zeroflte" name="BasicOS2025/android_device_samsung_zeroflte" revision="d49eae55304aa50472567a30f1ae1a8feef75405" remote="github" clone-depth="1" />
+  <project path="device/samsung/zerolte" name="BasicOS2025/android_device_samsung_zerolte" revision="16c349db624cf99c9318eb4ca07c308655abd769" remote="github" clone-depth="1" />
+  <project path="kernel/samsung/universal7420" name="BasicOS2025/android_kernel_samsung_universal7420" revision="421a3cabe8b4285c7e3d5cd617bf811f7168b874" remote="github" clone-depth="1" />
+  <project path="vendor/samsung" name="BasicOS2025/proprietary_vendor_samsung" revision="8a74202f65c576d6f94a4184ef1a5907875ae57a" remote="github" clone-depth="1" />
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" revision="626867fff788d69b28e8b2ba2abe80952b1ed805" remote="github" clone-depth="1" />
   <project path="device/samsung_slsi/sepolicy" name="samsungexynos7420/android_device_samsung_slsi_sepolicy" revision="e73d3c9e8c1a307cbbfb5daff51155dd483a2c41" remote="github" clone-depth="1" />
   <project path="hardware/samsung_slsi-linaro/exynos" name="samsungexynos7420/android_hardware_samsung_slsi-linaro_exynos" revision="c1088b024151552e7a36631d8cb5d20f42a8c33f" remote="github" clone-depth="1" />

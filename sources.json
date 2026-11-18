@@ -1,33 +1,33 @@
 [
   {
     "path": "device/samsung/universal7420-common",
-    "name": "samsungexynos7420/android_device_samsung_universal7420-common",
-    "branch": "lineage-21.0-unify",
-    "revision": "e77d91383a634dd299e32143a4db80919505516d"
+    "name": "BasicOS2025/android_device_samsung_universal7420-common",
+    "branch": "lineage-24.0",
+    "revision": "43c3a555b1569f1aa80d7fb981a299f677964095"
   },
   {
     "path": "device/samsung/zeroflte",
-    "name": "samsungexynos7420/android_device_samsung_zeroflte",
-    "branch": "lineage-20.0-unify",
-    "revision": "81c880f39d3c874f44b599c820b79acdd85b71e0"
+    "name": "BasicOS2025/android_device_samsung_zeroflte",
+    "branch": "lineage-24.0",
+    "revision": "d49eae55304aa50472567a30f1ae1a8feef75405"
   },
   {
     "path": "device/samsung/zerolte",
-    "name": "samsungexynos7420/android_device_samsung_zerolte",
-    "branch": "lineage-20.0-unify",
-    "revision": "6c6efad26e4666bb0ce80fde2d0a11775ec72268"
+    "name": "BasicOS2025/android_device_samsung_zerolte",
+    "branch": "lineage-24.0",
+    "revision": "16c349db624cf99c9318eb4ca07c308655abd769"
   },
   {
     "path": "kernel/samsung/universal7420",
-    "name": "samsungexynos7420/android_kernel_samsung_universal7420",
-    "branch": "lineage-21",
-    "revision": "985479cfb9d93a56043aec2ed8d506c22d683e28"
+    "name": "BasicOS2025/android_kernel_samsung_universal7420",
+    "branch": "lineage-24.0",
+    "revision": "421a3cabe8b4285c7e3d5cd617bf811f7168b874"
   },
   {
     "path": "vendor/samsung",
-    "name": "samsungexynos7420/proprietary_vendor_samsung",
-    "branch": "lineage-21.0-unify",
-    "revision": "4a7f3c23e8b4407b5fa1d0b68791d98cbe582c5d"
+    "name": "BasicOS2025/proprietary_vendor_samsung",
+    "branch": "lineage-24.0",
+    "revision": "8a74202f65c576d6f94a4184ef1a5907875ae57a"
   },
   {
     "path": "hardware/samsung",

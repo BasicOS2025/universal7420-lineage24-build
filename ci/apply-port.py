@@ -10,6 +10,15 @@ source = Path(sys.argv[1]).resolve()
 projects = json.loads((control / 'sources.json').read_text())
 for project in projects:
     folder = source / project['path']
+    current = subprocess.check_output(['git', '-C', str(folder), 'rev-parse', 'HEAD']).decode().strip()
+    if current != project['revision']:
+        # These are managed device/BSP repositories inside the disposable runner.
+        # Leave untracked files and all compilation outputs in place.
+        subprocess.run(['git', '-C', str(folder), 'restore', '--source=HEAD', '--', '.'], check=True)
+        subprocess.run(['git', '-C', str(folder), 'fetch', '--depth=1',
+                        'https://github.com/' + project['name'] + '.git', project['revision']], check=True)
+        subprocess.run(['git', '-C', str(folder), 'checkout', '--detach', project['revision']], check=True)
+        print('Updated', project['path'], 'to', project['revision'], flush=True)
     patch = control / 'patches' / (folder.name + '.patch')
     # Local patch names follow source folder names, except the common tree.
     if folder.name == 'universal7420-common':
